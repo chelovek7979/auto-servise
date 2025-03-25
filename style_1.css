@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body{
+    margin: auto;
+}
+.header-line{
+    width: 100%;
+    height: 33px;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: space-between;
+}
+.line-opisanie{
+    gap: 200px;
+    display: flex;
+    margin-left: 44px;
+    align-items: center;
+}
+.NAW-UP{
+    font-family: orbitron;
+    letter-spacing: 0%;
+    font-weight: 400;
+    font-size: 15px;
+}
+.btn{
+    background-color: #E8A241;
+    width: 320px;
+    text-align: center;
+    align-self: center; 
+}
+.register{
+    text-decoration: none;
+    color: white;
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px; 
+}
+.icon{
+    display: inline-block;
+    width: 27px;
+    vertical-align:sub
+   
+}
+/* -------------------------------------------------------------------------------------------- */
+.header-main{
+    width: 100%;
+    height: 82px;
+    background-color:#7B7B7B ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    margin-left: 44px;
+}
+.logo-text{
+    color:#E8A241 ;
+    font-size: 48px;
+    text-decoration: none;
+    font-family: orbitron;
+
+}
+.naw-bar{
+    margin-right: 44px;
+    display: flex;
+    gap: 30px
+    
+;
+}
+.naw-bar a{
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: #A4A4A4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    ;
+
+}
+
+/* @media (max-width: 1075px) {
+    .logo-text{
+        color: aquamarine;
+    }
+    .line-opisanie{
+        gap: 80px;
+    }
+    .naw-bar{
+        gap: 5px    
+    }
+    .btn{
+        width: 200px;
+    }
+    
+} */
+
+.main-block{
+    width: 100%;
+    height: 800px;
+}
+
+
+.im{
+    width: 100%;
+    height: 100%;
+    object-fit: scover 
+}
+.text-log{
+  position: relative;
+  left: 44px;
+  bottom: 830px;
+  color: aliceblue;
+  font-size: 36px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  line-height: 134.9900484085083%;
+  letter-spacing: -1%;
+}
+/* --------------------------------------------------- */
+
+.opisanie-site{
+    width: 100%;
+    height: 240px;
+    margin-bottom: 40px;
+}
+
+
+.orng-block{
+    width: 123px;
+    height: 15em;
+    background-color: #E8A241;
+    border-radius: 30px;
+    margin-left: 44px;
+    margin-top: 20px;
+}
+.opisanie-text{
+position: relative;
+  left: 200px;
+  bottom: 220px;
+  margin-right: 320px;
+  font-size: 21px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  line-height: 124.40934181213379%;
+  letter-spacing: 0%;
+}
+.achion{
+    font-size: 32px;
+    font-family: Orbit;
+    font-weight: 400;
+    line-height: 133.12499523162842%;
+    letter-spacing: -2%; 
+    text-align: center;
+    margin-top: 20px;
+}
+.run_str{
+    font-size: 38px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(226, 85, 85);
+    color: white;
+    padding: px; 
+}
+.run_str p{
+    margin: 0;
+    display: inline-block;
+    animation: marquee-animation 10s linear infinite;
+}
+
+
+/* --------------------------------------------------- */
+.promo-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.promo-item{
+    background-image: url('/auto-servise/image/image.png');
+    width: 568px;
+    height: 333px;
+    position: relative;
+}
+.promo-item-2{
+    background-image: url('/auto-servise/image/image-2.png');
+    width: 568px;
+    height: 333px;
+    position: relative;
+}
+.promo-item-3{
+    background-image: url('/auto-servise/image/andoscop.jpg');
+    width: 568px;
+    height: 333px;
+    position: relative;
+    border-radius: 20px;
+}
+.promo-content H3{
+    color: #E8A241;
+    font-size: 26px;
+    color: #ffffff;
+    margin: 0;
+    padding: 2%;
+    
+}
+.promo-content p{
+    color: #E8A241;
+    font-size: 14px;
+    color: #D9D9D9;
+    margin: 0;
+    padding-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+.promo-content button{
+    position: absolute;
+    right: 3%;
+    bottom: 3%;
+    background-color: orange;
+    padding: 10px 30px 10px 30px;
+    border-radius: 40px;
+    font-size: 32px;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+
+}
