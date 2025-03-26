@@ -81,21 +81,7 @@ body{
 
 }
 
-/* @media (max-width: 1075px) {
-    .logo-text{
-        color: aquamarine;
-    }
-    .line-opisanie{
-        gap: 80px;
-    }
-    .naw-bar{
-        gap: 5px    
-    }
-    .btn{
-        width: 200px;
-    }
-    
-} */
+ 
 
 .main-block{
     width: 100%;
@@ -174,30 +160,38 @@ position: relative;
 
 /* --------------------------------------------------- */
 .promo-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    
 }
 .promo-item{
-    background-image: url('/auto-servise/image/image.png');
+    background-image: url('image/image.png');
     width: 568px;
     height: 333px;
     position: relative;
+    
+    
 }
 .promo-item-2{
-    background-image: url('/auto-servise/image/image-2.png');
+    background-image: url('image/image-2.png');
     width: 568px;
     height: 333px;
     position: relative;
 }
 .promo-item-3{
-    background-image: url('/auto-servise/image/andoscop.jpg');
+    background-image: url('/image/andoscop.jpg');
     width: 568px;
     height: 333px;
     position: relative;
     border-radius: 20px;
 }
+
 .promo-content H3{
     color: #E8A241;
     font-size: 26px;
@@ -228,3 +222,20 @@ position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 
 }
+
+
+@media (max-width: 1750px) {
+    .promo-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+    
+  
+
+
+} }
