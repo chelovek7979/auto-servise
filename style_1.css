@@ -11,7 +11,7 @@ body{
    justify-content: space-between;
 }
 .line-opisanie{
-    gap: 200px;
+    gap: 25%;
     display: flex;
     margin-left: 44px;
     align-items: center;
@@ -80,22 +80,10 @@ body{
     ;
 
 }
-
-/* @media (max-width: 1075px) {
-    .logo-text{
-        color: aquamarine;
-    }
-    .line-opisanie{
-        gap: 80px;
-    }
-    .naw-bar{
-        gap: 5px    
-    }
-    .btn{
-        width: 200px;
-    }
-    
-} */
+.naw-bar  .repost{ 
+    color: rgb(205, 147, 22);
+    font-weight: 700;
+}
 
 .main-block{
     width: 100%;
@@ -135,13 +123,14 @@ body{
     border-radius: 30px;
     margin-left: 44px;
     margin-top: 20px;
+    
 }
 .opisanie-text{
 position: relative;
   left: 200px;
   bottom: 220px;
   margin-right: 320px;
-  font-size: 21px;
+  font-size: 1vw;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 300;
   line-height: 124.40934181213379%;
@@ -174,30 +163,38 @@ position: relative;
 
 /* --------------------------------------------------- */
 .promo-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+       
 }
 .promo-item{
-    background-image: url('/auto-servise/image/image.png');
+    background-image: url('image/image.png');
     width: 568px;
     height: 333px;
     position: relative;
+    
+    
 }
 .promo-item-2{
-    background-image: url('/auto-servise/image/image-2.png');
+    background-image: url('image/image-2.png');
     width: 568px;
     height: 333px;
     position: relative;
 }
 .promo-item-3{
-    background-image: url('/auto-servise/image/andoscop.jpg');
+    background-image: url('/image/andoscop.jpg');
     width: 568px;
     height: 333px;
     position: relative;
     border-radius: 20px;
 }
+
 .promo-content H3{
     color: #E8A241;
     font-size: 26px;
@@ -228,3 +225,179 @@ position: relative;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
 
 }
+
+
+
+
+@media (max-width: 1280px) {
+    .promo-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;}
+    .opisanie-text{
+        font-size: 1.3vw;
+        margin-right: 250px;
+        }
+    .logo-text{
+        font-size: 36px;
+    }
+    .naw-bar{
+        gap: 0px;
+    }
+    .naw-bar a{
+        margin-right: 15px;
+        font-size: 28px;
+        font-weight: 400;
+        letter-spacing: 0%;
+        color: #A4A4A4;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   }
+        ;
+    .line-opisanie{
+        gap: 0px;
+        display: flex;
+        margin-left: 44px;
+        align-items: center;
+        }
+
+        .NAW-UP{
+            font-size: 11px;
+        }
+
+    }
+
+
+
+
+@media (max-width: 700px) {
+    
+    .opisanie-text{
+        font-size: 1.6vw;
+        
+        }
+}
+
+.father-block{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+
+ .top-block{
+    background-color: #E8A241;
+    width: 45%;
+    height: 53px;
+    border-radius: 30px 30px 0 0  ;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.top-block p{
+    font-size: 2.4vw;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    ;
+    
+}
+.middle-block{
+    width: 95%;
+    height: 366px;
+    background-color: #E8A241;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px ;
+}
+
+.middle-block-content{
+    background-color: #E8A241;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px;
+    margin-bottom: 2%;
+    
+    
+}
+
+
+.middle-block-content .up-text{
+    font-size: 1.8vw;
+    color: #ffffff;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+    text-align: center;
+    width: 50%;
+    font-weight: 200;
+    letter-spacing: -2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.under-block{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 90px;
+    width: 100%;
+    text-align: center;
+        
+} 
+.under-block p{
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 1.3vw;
+}
+.service{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -2%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+
+}
+.grid-of-stamps{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;}
+
+
+.and-more{
+    text-align: center;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    letter-spacing: -2%;
+}
+
+@media (max-width: 1750px) {
+    .promo-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;}
+        .opisanie-text{
+            font-size: 1.1vw;
+        }
+        .grid-of-stamps{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);}
+    } 
+
+/* -------------------------------------------------- */
+
